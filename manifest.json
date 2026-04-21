@@ -1,14 +1,25 @@
-"icons": [
-  {
-    "src": "assets/icon-192.png",
-    "type": "image/png",
-    "sizes": "192x192",
-    "purpose": "any maskable"
-  },
-  {
-    "src": "assets/icon-512.png",
-    "type": "image/png",
-    "sizes": "512x512",
-    "purpose": "any maskable"
-  }
-]
+{
+  "short_name": "DadosPro",
+  "name": "Dados Pro: Simulador de Texturas",
+  "description": "Simulador de dados profesional con física de giro fluido y materiales reales.",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "scope": "./"
+}
