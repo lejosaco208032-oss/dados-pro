@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dados Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <div class="app-container">
+        <div class="controls">
+            <div class="selector">
+                <button id="btn-1" class="mode-btn active" onclick="setDiceMode(1)">1 DADO</button>
+                <button id="btn-2" class="mode-btn" onclick="setDiceMode(2)">2 DADOS</button>
+            </div>
+            <div class="material-grid">
+                <button class="mat-btn active" onclick="setMaterial('plastic')">PLÁSTICO</button>
+                <button class="mat-btn" onclick="setMaterial('metal')">METAL</button>
+                <button class="mat-btn" onclick="setMaterial('wood')">MADERA</button>
+                <button class="mat-btn" onclick="setMaterial('crystal')">MÁRMOL</button>
+            </div>
+        </div>
+
+        <div class="dice-wrapper">
+            <div class="scene" id="scene1">
+                <div class="cube plastic" id="cube1">
+                    <div class="face front one"></div>
+                    <div class="face back six"></div>
+                    <div class="face right three"></div>
+                    <div class="face left four"></div>
+                    <div class="face top two"></div>
+                    <div class="face bottom five"></div>
+                </div>
+            </div>
+            <div class="scene hidden" id="scene2">
+                <div class="cube plastic" id="cube2">
+                    <div class="face front one"></div>
+                    <div class="face back six"></div>
+                    <div class="face right three"></div>
+                    <div class="face left four"></div>
+                    <div class="face top two"></div>
+                    <div class="face bottom five"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="history" style="text-align: center; opacity: 0.5;">LISTO</div>
+        <button id="roll-btn">LANZAR DADOS</button>
+    </div>
+    <audio id="dice-sound" src="sounds/plastic.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
